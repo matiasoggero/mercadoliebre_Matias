@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de registro</title>
+    <link rel="stylesheet" href="/css/register.css">
+</head>
+
+<body>
+
+    <header>
+        <img src="/images/logo-mercado-liebre.svg" id="logo" alt="logo">
+    </header>
+
+    <main>
+
+        <form action="/login" method="POST">
+            <input class="longger" type="text" name="nombre" placeholder="Nombre y Apellido" required>
+            <input class="longger" type="text" name="usuario" placeholder="nombre de usuari@"required>
+            <input class="longger" type="email" name="mail" placeholder="E-mail"required>
+            <input class="longger" type="text" name="domicilo" placeholder="Domicilio"required>
+
+            <h4>Fecha de nacimiento</h4>
+            <input class="longger" type="date" name="nacimiento"required>
+
+            <h4 class="option">Perfil del usuario</h4>
+
+            <div class="order">
+                <div>
+                    <label for="btnCombra">Comprar</label>
+                    <input type="radio" name="perfil" id="btnCombra">
+                </div>
+                <div>
+                    <label for="btnVenta">Vender</label>
+                    <input type="radio" name="perfil" id="btnVenta">
+                </div>
+            </div>
+
+            <h4 class="option">Categorias de interes</h4>
+
+            <div class="order">
+                <div>
+                    <label for="chbelectro">Electro</label>
+                    <input type="checkbox" name="categoria" id="chbelectro">
+                </div>
+                <div>
+                    <label for="chbmoda">Moda</label>
+                    <input type="checkbox" name="categoria" id="chbmoda">
+                </div>
+                <div>
+                    <label for="chbhogar">Hogar</label>
+                    <input type="checkbox" name="categoria" id="chbhogar">
+                </div>
+                <div>
+                    <label for="chbjuegos">Jugueteria</label>
+                    <input type="checkbox" name="categoria" id="chbjuegos">
+                </div>
+                <div>
+                    <label for="chbvida">Vida sana</label>
+                    <input type="checkbox" name="categoria" id="chbvida">
+                </div>
+            </div>
+
+            <label class="user">Foto de usuario</label>
+            <input type="file" name="imagen" accept=".jpg">
+            <input class="longger" type="password" name="contraseña" placeholder="Contraseña" minlength="6">
+            <input class="longger" type="password" name="contraseña verificada" placeholder="Confirmar contraseña"minlength="6">
+
+            <button type="submit" id="send">Enviar</button>
+            <button type="reset" id="clean">Borrar</button>
+        </form>
+    </main>
+
+</body>
+
+</html>
