@@ -229,16 +229,6 @@ footer i {
         font-size: initial;
     }
 
-    header div.conteiner input{
-        position: relative;
-        left: 155px;
-    }
-
-    header div.conteiner button{
-        position: relative;
-        left: 150px;
-        z-index: 2;
-    }
 
     .header-nav-bar i{
         font-size: 16px;
