@@ -6,16 +6,26 @@
 
 header {
     background-color: #EAC926;
+    padding-bottom: 15px;
 }
 
 header img{
-    width: 50%;
+    width: 30%;
     margin-left: 20px;
+}
+
+header h4{
+    display: none;
 }
 
 main{
     background-color: #ebebeb;
     height: 70%;
+}
+
+main form{
+    width: 90%;
+    margin: auto;
 }
 
 main form input.longger{
@@ -51,16 +61,6 @@ main form button{
     transition: background-color, color 300ms;
 }
 
-main form button#send:hover{
-    background-color: #0022aa;
-    color: #fff;
-}
-
-main form button#clean:hover{
-    background-color: #a00;
-    color: #fff;
-}
-
 footer {
     text-align: center;
 }
@@ -69,4 +69,43 @@ footer i {
     font-size: 2em;
     margin-bottom: 10px;
     color: blue;
+}
+
+@media (min-width: 361px){
+    header{
+        display: flex;
+    justify-content: space-around;
+    }
+
+    header h4{
+        display: block;
+        align-self: center;
+    }
+
+    main form input.longger{
+        height: 25px;
+    }
+
+    main form input.longger{
+        width: 90%;
+        text-align: center;
+        margin: 10px;
+        border-radius: 5px;
+    }
+
+    main form button{
+        height: 20px;
+    }
+}
+
+@media (min-width: 769px){
+    main form button#send:hover{
+        background-color: #0022aa;
+        color: #fff;
+    }
+    
+    main form button#clean:hover{
+        background-color: #a00;
+        color: #fff;
+    }
 }
